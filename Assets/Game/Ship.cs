@@ -21,9 +21,10 @@ public class Ship : MonoBehaviour {
     public float altitude = 0;
     public float altdelta = 0;
     // Update is called once per frame
-    void Update () {
-        Accelerate = Forge / Mass - gravity / Mass;
-        Speed = Speed+ Accelerate * Time.deltaTime;
+    void Update ()
+    {
+        Accelerate = Forge / Mass - GetGravity() / Mass;
+        Speed = Speed + Accelerate * Time.deltaTime;
         altdelta = 0;
         altdelta = Speed * Mass;
         altitude += altdelta;
@@ -37,6 +38,19 @@ public class Ship : MonoBehaviour {
             }
         }
         Forge = 0;
+    }
+
+    private  float GetGravity()
+    {
+       
+        if (altitude >450000)
+        {
+            return 0;
+        }
+        else
+        {
+            return gravity * (1 - altitude / 450000f);
+        }
     }
 
     public Transform target;
