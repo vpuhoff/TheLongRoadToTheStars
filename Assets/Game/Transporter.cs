@@ -57,6 +57,7 @@ public class Transporter : BaseModule
         posin = IN.transform.position;
         posout = OUT.transform.position;
         lineRenderer.SetColors(Color.red, Color.blue);
+        lineRenderer.SetWidth( Amount / BasePower,0.3f) ;
         lineRenderer.SetPosition(0, new Vector3(posthis.x, posthis.y, posthis.z));
         lineRenderer.SetPosition(1, new Vector3(posin.x, posin.y, posin.z ));
         lineRenderer.SetPosition(2, new Vector3(posthis.x, posthis.y, posthis.z ));

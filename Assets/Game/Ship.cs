@@ -37,6 +37,8 @@ public class Ship : MonoBehaviour {
                 Accelerate = 0;
             }
         }
+        target.position = new Vector3(target.position.x, target.position.y, -altitude / 100000f);
+        camera.position = new Vector3(target.position.x-2f, target.position.y+9f, target.position.z - 14f-4f*GetGravity());
         Forge = 0;
     }
 
@@ -53,6 +55,7 @@ public class Ship : MonoBehaviour {
         }
     }
 
+    public Transform camera;
     public Transform target;
     public Rect rect = new Rect(-150, 20, 100, 40);
     public Vector3 offset = new Vector3(0.1f, -0.1f, 0); // height above the target position
