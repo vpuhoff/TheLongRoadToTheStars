@@ -37,8 +37,8 @@ public class Ship : MonoBehaviour {
                 Accelerate = 0;
             }
         }
-        target.position = new Vector3(target.position.x, target.position.y, -altitude / 100000f);
-        camera.position = new Vector3(target.position.x-2f, target.position.y+9f, target.position.z - 14f-4f*GetGravity());
+        //target.position = new Vector3(target.position.x, target.position.y, -altitude / 100000f);
+        //camera.position = new Vector3(target.position.x-2f, target.position.y+9f, target.position.z - 14f-4f*GetGravity());
         Forge = 0;
     }
 
