@@ -69,11 +69,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Game\BaseCell.cs" />
     <Compile Include="Assets\Game\BaseEnergyDispenser.cs" />
     <Compile Include="Assets\Game\BaseEnergyGenerator.cs" />
     <Compile Include="Assets\Game\BaseEngine.cs" />
     <Compile Include="Assets\Game\BaseModule.cs" />
     <Compile Include="Assets\Game\BaseStorage.cs" />
+    <Compile Include="Assets\Game\MapController.cs" />
     <Compile Include="Assets\Game\PlayerControl.cs" />
     <Compile Include="Assets\Game\Ship.cs" />
     <Compile Include="Assets\Game\StrategicCamera.cs" />
