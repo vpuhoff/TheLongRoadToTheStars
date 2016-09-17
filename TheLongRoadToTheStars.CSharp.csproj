@@ -74,6 +74,7 @@
     <Compile Include="Assets\Game\BaseEngine.cs" />
     <Compile Include="Assets\Game\BaseModule.cs" />
     <Compile Include="Assets\Game\BaseStorage.cs" />
+    <Compile Include="Assets\Game\PlayerControl.cs" />
     <Compile Include="Assets\Game\Ship.cs" />
     <Compile Include="Assets\Game\StrategicCamera.cs" />
     <Compile Include="Assets\Game\Transporter.cs" />

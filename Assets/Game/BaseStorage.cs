@@ -66,6 +66,7 @@ public class BaseStorage : BaseModule {
         var point = Camera.main.WorldToScreenPoint(target.position  + offset);
         rect.x = point.x;
         rect.y = Screen.height - point.y - rect.height; // bottom left corner set to the 3D point
+        GUI.contentColor = Color.black;
         GUI.Label(rect, target.name+":"+(int)Volume); // display its name, or other string
     }
 }
