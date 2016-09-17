@@ -73,6 +73,7 @@
     <Compile Include="Assets\Game\BaseEnergyDispenser.cs" />
     <Compile Include="Assets\Game\BaseEnergyGenerator.cs" />
     <Compile Include="Assets\Game\BaseEngine.cs" />
+    <Compile Include="Assets\Game\BaseMap.cs" />
     <Compile Include="Assets\Game\BaseModule.cs" />
     <Compile Include="Assets\Game\BaseStorage.cs" />
     <Compile Include="Assets\Game\MapController.cs" />
